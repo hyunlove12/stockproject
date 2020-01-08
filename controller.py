@@ -3,6 +3,7 @@ from model import CabbageModel
 import numpy as np
 from krx import KrxCrawler
 from naver_stock import StockModel as sm
+from scattertest import scattertest as st
 
 class CabbageController:
     def __init__(self):
@@ -44,3 +45,6 @@ class CabbageController:
             e = sm('005930')
             e.selWeb()
             #e.scrap()
+        elif flag == 'f':
+            scat = st()
+            scat.test()

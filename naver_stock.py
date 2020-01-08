@@ -9,7 +9,6 @@ class StockModel:
         self.item = item
         self.url = 'https://finance.naver.com/item/sise_day.nhn?code={item}'.format(item=self.item)
         self.df = pd.DataFrame()
-        pass
 
     def scrap(self):
         url = 'https://finance.naver.com/item/sise_day.nhn?code={item}'.format(item=self.item)

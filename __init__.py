@@ -8,9 +8,10 @@ if __name__ == '__main__':
     #모델이 존재하지 않을경우만 실행한다.
     print('d : 종목')
     print('e : 네이버 주가')
+    print('f : 산점도')
     flag = input('선택')
-    call = controller()
 
+    call = controller()
     call.exec(flag)
 
 
